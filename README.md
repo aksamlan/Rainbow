@@ -43,11 +43,9 @@ sed -i "s/-rpcpassword=demo/-rpcpassword=Sifre-belirle/g" docker-compose.yml
 docker-compose up -d
 docker exec -it bitcoind /bin/bash
 bitcoin-cli -testnet4 -rpcuser=belirledigin-isim -rpcpassword=belirledigin-sifre -rpcport=5000 createwallet walletname
-exit
-```
 ### Cüzdan adresimizi kontrol edelim
-```console
 bitcoin-cli -testnet4 -rpcuser=belirledigin-isim -rpcpassword=belirledigin-sifre -rpcport=5000 getnewaddress
+exit
 ```
 ### Repoyu ve binary kuralım
 ```console
