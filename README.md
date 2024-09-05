@@ -44,7 +44,7 @@ bitcoin-cli -testnet4 -rpcuser=demo -rpcpassword=demo -rpcport=5000 createwallet
 ```
 ### Cüzdan adresimizi kontrol edelim
 ```console
-bitcoin-cli -testnet4 -rpcuser=demo -rpcpassword=demo -rpcport=5000 getnewaddress
+bitcoin-cli -testnet4 -rpcuser=isim-belirle -rpcpassword=sifre-belirle -rpcport=5000 getnewaddress
 ```
 ### Repoyu ve binary kuralım
 ```console
