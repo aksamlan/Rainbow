@@ -1,5 +1,8 @@
 ![image](https://github.com/user-attachments/assets/98a5336f-4c80-49d0-8b0a-9008b0a9dd22)
 
+- Website : [Buradan](https://docs.rainbowprotocol.xyz/)
+- Twitter : [Buradan](https://x.com/rbo_protocol)
+
 # Rainbow Teşviklli Node Testine katılıyoruz. Bitcoin tarafı bir node'dir. 
 
 ### Sistem gereksinimleri : 
@@ -101,11 +104,16 @@ cd rbo_indexer_testnet
 # Kurulum tamamlanmıştır. Cüzdan ve Principal ID'yi yedekleyelim
 ### Principal ID : 
 ```console
-cat .identity/principal.json
+cat rbo_indexer_testnet/identity/principal.json
 ```
 ### Private Key : 
 ```console
-cat .identity/private_key.pem
+cat rbo_indexer_testnet/identity/private_key.pem
 ```
 
 # [EXPLORER](https://testnet.rainbowprotocol.xyz/explorer) sitesine girin ve Principal İD nizi buraya yazıp Submit ediniz.
+
+# SİLMEK İÇİN AŞAĞIDAKİ KODU KULLANABİLİRSİNİZ.
+```console
+rm -rf project btc_testnet4 rbo_indexer_testnet
+```
