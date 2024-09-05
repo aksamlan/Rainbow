@@ -59,7 +59,7 @@ chmod +x rbo_worker
 ```console
 nano docker-compose.yml
 ```
-# AŞAĞIDAKİLERİ NANO DOSYASININ İÇİNE KOPYALAYIP YAPIŞTIRIN VE CTRL+X+Y SONRA KAYDETMEK İÇİN 'ENTER' Tuşuna basın
+## AŞAĞIDAKİLERİ NANO DOSYASININ İÇİNE KOPYALAYIP YAPIŞTIRIN DÜZENLEYİN VE CTRL+X+Y SONRA KAYDETMEK İÇİN 'ENTER' Tuşuna basın
 ```console
 version: '3'
 services:
