@@ -80,12 +80,21 @@ services:
 docker-compose up -d
 ```
 
+![image](https://github.com/user-attachments/assets/24464fd1-e84e-473b-8da8-897b5fb87ef4)
+### Eğer yukarıdaki gibi hata verirse oradaki kontainer ID kopyalayın ve aşağıdaki yolu izleyin.
+```console
+docker stop <paste your container id>
+docker rm <paste your container id>
+docker-compose up -d
+```
+
 # Bitcoin Core'u bağlayalım ve indeksleyiciyi çalıştıralım
 ```console
 screen -S Rainbow
 ```
 ```console
-./rbo_worker worker --rpc http://127.0.0.1:5000 --password belirledigin-isim --username belirledigin-sifre --start_height 42000
+cd rbo_indexer_testnet
+./rbo_worker worker --rpc http://127.0.0.1:5000 --username belirledigin-isim --password belirledigin-sifre --start_height 42000
 ```
 
 # Kurulum tamamlanmıştır. Cüzdan ve Principal ID'yi yedekleyelim
