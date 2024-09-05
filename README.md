@@ -40,11 +40,11 @@ docker-compose --version
 ```console
 docker-compose up -d
 docker exec -it bitcoind /bin/bash
-bitcoin-cli -testnet4 -rpcuser=demo -rpcpassword=demo -rpcport=5000 createwallet walletname
+bitcoin-cli -testnet4 -rpcuser=isim-belirle -rpcpassword=sifre-belirle -rpcport=5000 createwallet walletname
 ```
 ### Cüzdan adresimizi kontrol edelim
 ```console
-bitcoin-cli -testnet4 -rpcuser=isim-belirle -rpcpassword=sifre-belirle -rpcport=5000 getnewaddress
+bitcoin-cli -testnet4 -rpcuser=belirledigin-isim -rpcpassword=belirledigin-sifre -rpcport=5000 getnewaddress
 ```
 ### Repoyu ve binary kuralım
 ```console
@@ -68,7 +68,7 @@ services:
     container_name: bitcoind
     volumes:
       - /root/project/run_btc_testnet4/data:/root/.bitcoin/
-    command: ["bitcoind", "-testnet4", "-server","-txindex", "-rpcuser=isim-belirle", "-rpcpassword=sifre-belirle", "-rpcallowip=0.0.0.0/0", "-rpcbind=0.0.0.0:5000"]
+    command: ["bitcoind", "-testnet4", "-server","-txindex", "-rpcuser=belirledigin-isim", "-rpcpassword=belirledigin-sifre", "-rpcallowip=0.0.0.0/0", "-rpcbind=0.0.0.0:5000"]
     ports:
       - "8333:8333"
       - "48332:48332"
