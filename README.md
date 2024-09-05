@@ -68,7 +68,7 @@ services:
     container_name: bitcoind
     volumes:
       - /root/project/run_btc_testnet4/data:/root/.bitcoin/
-    command: ["bitcoind", "-testnet4", "-server","-txindex", "-rpcuser=demo", "-rpcpassword=demo", "-rpcallowip=0.0.0.0/0", "-rpcbind=0.0.0.0:5000"]
+    command: ["bitcoind", "-testnet4", "-server","-txindex", "-rpcuser=isim-belirle", "-rpcpassword=sifre-belirle", "-rpcallowip=0.0.0.0/0", "-rpcbind=0.0.0.0:5000"]
     ports:
       - "8333:8333"
       - "48332:48332"
@@ -84,7 +84,7 @@ docker-compose up -d
 screen -S Rainbow
 ```
 ```console
-./rbo_worker worker --rpc http://127.0.0.1:5000 --password demo --username demo --start_height 42000
+./rbo_worker worker --rpc http://127.0.0.1:5000 --password belirledigin-isim --username belirledigin-sifre --start_height 42000
 ```
 
 # Kurulum tamamlanmıştır. Cüzdan ve Principal ID'yi yedekleyelim
