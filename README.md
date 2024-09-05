@@ -96,6 +96,7 @@ screen -S Rainbow
 cd rbo_indexer_testnet
 ./rbo_worker worker --rpc http://127.0.0.1:5000 --username belirledigin-isim --password belirledigin-sifre --start_height 42000
 ```
+### Loglar akmaya başladıktan sonra CTRL A + D yapıp screenden çıkalım. Tekrar girmek için screen -r rainbow
 
 # Kurulum tamamlanmıştır. Cüzdan ve Principal ID'yi yedekleyelim
 ### Principal ID : 
