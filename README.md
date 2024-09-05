@@ -38,9 +38,11 @@ docker-compose --version
 ```
 ### Konteyner bağlayalım, yeni bir cüzdan ve yeni bir adres oluşturalım.
 ```console
+sed -i "s/-rpcuser=demo/-rpcuser=isim-belirle/g" docker-compose.yml
+sed -i "s/-rpcpassword=demo/-rpcpassword=Sifre-belirle/g" docker-compose.yml
 docker-compose up -d
 docker exec -it bitcoind /bin/bash
-bitcoin-cli -testnet4 -rpcuser=isim-belirle -rpcpassword=sifre-belirle -rpcport=5000 createwallet walletname
+bitcoin-cli -testnet4 -rpcuser=belirledigin-isim -rpcpassword=belirledigin-sifre -rpcport=5000 createwallet walletname
 ```
 ### Cüzdan adresimizi kontrol edelim
 ```console
