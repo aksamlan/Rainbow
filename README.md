@@ -104,11 +104,11 @@ cd rbo_indexer_testnet
 # Kurulum tamamlanmıştır. Cüzdan ve Principal ID'yi yedekleyelim
 ### Principal ID : 
 ```console
-cat rbo_indexer_testnet/identity/principal.json
+cat root/rbo_indexer_testnet/identity/principal.json
 ```
 ### Private Key : 
 ```console
-cat rbo_indexer_testnet/identity/private_key.pem
+cat root/rbo_indexer_testnet/identity/private_key.pem
 ```
 
 # [EXPLORER](https://testnet.rainbowprotocol.xyz/explorer) sitesine girin ve Principal İD nizi buraya yazıp Submit ediniz.
