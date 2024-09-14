@@ -117,3 +117,13 @@ cat root/rbo_indexer_testnet/identity/private_key.pem
 ```console
 rm -rf project btc_testnet4 rbo_indexer_testnet
 ```
+
+
+# UPDATE - GUNCELLEME İÇİN ADIMLARI İZLEYİN
+### Eğer rbo dosyası içerisinde yapacaksan cd rbo_indexer_testnet atla ve yap. Öncesinde ctrl+c ile nodu durdur ve aşağıdaki komutları izle.
+```console
+cd rbo_indexer_testnet
+wget https://storage.googleapis.com/rbo/rbo_worker/rbo_worker-linux-amd64-0.0.2-20240914-4ec80a8.tar.gz && tar -xzvf rbo_worker-linux-amd64-0.0.2-20240914-4ec80a8.tar.gz
+cp rbo_worker-linux-amd64-0.0.2-20240914-4ec80a8/rbo_worker rbo_worker
+./rbo_worker worker --rpc http://127.0.0.1:5000 --username kullanıcıadın --password şifren --start_height 42000
+```
